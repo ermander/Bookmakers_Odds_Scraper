@@ -1,0 +1,27 @@
+[INFO  - 2021-01-30T14:09:25.908Z] GhostDriver - Main - running on port 52362
+[INFO  - 2021-01-30T14:09:30.190Z] Session [c50b6750-6304-11eb-9b0c-d56857fc5189] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2021-01-30T14:09:30.191Z] Session [c50b6750-6304-11eb-9b0c-d56857fc5189] - page.customHeaders:  - {}
+[INFO  - 2021-01-30T14:09:30.191Z] Session [c50b6750-6304-11eb-9b0c-d56857fc5189] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2021-01-30T14:09:30.191Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: c50b6750-6304-11eb-9b0c-d56857fc5189
+[ERROR - 2021-01-30T14:09:33.226Z] Session [c50b6750-6304-11eb-9b0c-d56857fc5189] - page.onError - msg: Unhandled promise rejection ChunkLoadError: Loading chunk vendors~web_widget failed.
+(missing: https://static.zdassets.com/web_widget/latest/vendors~web_widget.ab97379118a5b2805f2a.chunk.js)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-01-30T14:09:33.226Z] Session [c50b6750-6304-11eb-9b0c-d56857fc5189] - page.onError - stack:
+  exports (https://static.zdassets.com/web_widget/latest/preload.c08ea285b695f0708442.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-01-30T14:09:35.861Z] Session [c50b6750-6304-11eb-9b0c-d56857fc5189] - page.onError - msg: ReferenceError: Can't find variable: initializeContainerParameters
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-01-30T14:09:35.861Z] Session [c50b6750-6304-11eb-9b0c-d56857fc5189] - page.onError - stack:
+  (anonymous function) (https://www.betaland.it/XSport/pages/prematch.jsp?system_code=BETALAND&token=&language=it&ip=176.247.229.196&hide_switcher_bar=true&cgRoot=&canonicalUrl=sport%2Fcalcio%2Fitalia%2Fserie-a-OIA-scommesse-sportive-online&openEntity=1_31_33:3302)
+  j (https://www.betaland.it/XSport/pages/js/jquery-1.11.1.min.js?v=20201205001:2)
+  fireWith (https://www.betaland.it/XSport/pages/js/jquery-1.11.1.min.js?v=20201205001:2)
+  ready (https://www.betaland.it/XSport/pages/js/jquery-1.11.1.min.js?v=20201205001:2)
+  J (https://www.betaland.it/XSport/pages/js/jquery-1.11.1.min.js?v=20201205001:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-01-30T14:09:36.131Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1612015776090
+
+  phantomjs://platform/console++.js:263 in error
