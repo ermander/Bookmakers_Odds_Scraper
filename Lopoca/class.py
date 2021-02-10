@@ -5,8 +5,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
-import pyautogui as pa
-from utils import cercaschermoX5, cercaschermoXquantovuoi
+#import pyautogui as pa
+#from utils import cercaschermoX5, cercaschermoXquantovuoi
 from selenium.webdriver.common.keys import Keys
 
 
