@@ -1,4 +1,4 @@
-# Importing all functions
+# Importing all scraping functions
 from Betaland.seriaA import serieA
 from Betaland.serieB import serieB
 from Betaland.premierLigue import premierLigue

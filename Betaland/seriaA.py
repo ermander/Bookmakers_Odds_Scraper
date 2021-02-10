@@ -30,16 +30,18 @@ def serieA():
         #Switching to iframe tag
         driver.switch_to.frame(driver.find_element_by_xpath('/html/body/main/div/iframe'))
 
+        # Finding all match names
+        calendar = driver.find_elements_by_css_selector("a.match-description-a-tag")
+        print(len(calendar))
+        for x in calendar:
+            print(x.text)
+
+
         #Finding all odds (1,X,2,1X,12,X2,U2.5,02.5,GG,NG)
         odds = driver.find_elements_by_css_selector("a.prematch-fluid-giocabilita-s")
         for odd in odds:
             print(odd.text)
 
-        #Finding all match names
-        calendar = driver.find_elements_by_css_selector("a.match-description-a-tag")
-        print(len(calendar))
-        for x in calendar:
-            print(x.text)
 
         # driver.switch_to.default_content()
         condition = False
