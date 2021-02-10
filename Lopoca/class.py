@@ -5,14 +5,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
-#import pyautogui as pa
-#from utils import cercaschermoX5, cercaschermoXquantovuoi
-from selenium.webdriver.common.keys import Keys
 
 
 class serie:
 
-    def __init__(self,driver,N):
+    def __init__(self, driver, N):
         self.driver = driver
         self.nat = ""
         self.lega = ""
@@ -44,11 +41,12 @@ class serie:
         self.driver.execute_script("window.scrollTo(0, 2000)")
 
 
-    def cerca(self,elemento,aperto):
+    def cerca(self, elemento, aperto):
         giro = 0
         self.scorrisu()
-        time.sleep(2)
+        time.sleep(1)
         trovato = False
+
         while giro < 6 and trovato == False: #giro = da sopra a sotto
             try:
                 elemento.click()
@@ -74,6 +72,7 @@ class serie:
                 except:
                     pass
                     self.cerca(self.calcioObj, 0)
+                    giro = giro + 1
             if giro == 3 :
                 print( "calcio non trovato, aka problemone ")
         else:
@@ -93,6 +92,7 @@ class serie:
                 except:
                     pass
                     self.cerca(self.natObj, 1)
+                    giro = giro + 1
             if giro == 3 :
                 print("nazione: ", self.nat, " non trovata ")
                 self.natAperta = False
@@ -117,6 +117,7 @@ class serie:
                     except:
                         pass
                         self.cerca(self.legaObj, 1)
+                        giro = giro + 1
                 if giro == 3 :
                     print("lega: ", self.lega, " non trovata ")
                     self.legaAperta = False
